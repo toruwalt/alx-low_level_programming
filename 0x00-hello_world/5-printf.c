@@ -6,15 +6,13 @@
 
 int main(void)
 {
-	/*
+	/**
 	 *This is the function that prints
 	 */
-	
-	printf("with proper grammar, but the outcome is a piece of art,\n");
 
+	printf("with proper grammar, but the outcome is a piece of art,");
 	/**
-	 This return the value of the function
+	 *This return the value of the function
 	 */
-
 	return (0); 
 }
