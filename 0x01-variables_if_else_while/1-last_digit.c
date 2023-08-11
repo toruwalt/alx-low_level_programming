@@ -12,23 +12,25 @@
 
 int main(void)
 {
-	int n;
+        int n;
+        int m;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+        srand(time(0));
+        n = rand() - RAND_MAX / 2;
+        m = abs(n % 10);
 
-	if (n > 0)
-	{
-		printf("%d is positive", n);
-
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero", n);
-	}
-	else
-	{
-		printf("%d is negative", n);
-	}
-	return (0);
+        if (m > 5)
+        {
+                printf("Last digit of %d is %d and is greater than 5", n,m);
+		
+        } 
+        else if (m == 0)
+        {
+                printf("Last digit of %d is %d and is 0",n ,m);
+        }
+        else
+        {
+                printf("Last digit of %d is %d and is less than 6 and not 0", n);
+        } 
+        return (0);
 }
