@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * abs - returns the absolutee value
+ * _abs - returns the absolutee value
  *
  * @n: Parameter input
  *
@@ -14,7 +14,6 @@ int _abs(int n)
 	{
 		return (abs(n));
 	}
-	
 	else
 	{
 		return (n);
