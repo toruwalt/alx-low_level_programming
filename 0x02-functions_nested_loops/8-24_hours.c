@@ -1,19 +1,24 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ *jack_beuer - prints minutes in a day
  * Return: Always 0
  */
 
-int main(void)
+void jack_beuer(void)
 {
-	void print_alphabet(void)
+	int i, j;
+
+	for (i = 0; i < 24; i++)
 	{
-		int ch;
-		for (ch = 'a'; ch <= 'z'; ch++)
+		for (j = 0; j < 60; j++)
 		{
-			_putchar('ch');
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+			_putchar(':');
+			_putchar((j / 10) + '0');
+			_putchar((j % 10) + '0');
+			_putchar('\n');
 		}
 	}
 	_putchar('\n');
