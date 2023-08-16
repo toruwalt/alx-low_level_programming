@@ -1,18 +1,20 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code.
+ * _isalpha - check it is an alphabet
  *
- * Return: Always 1 if lowercase, else return 0.
+ * @c: Parameter input
+ *
+ * Return: 1 if a letter no matter the case, else return 0.
  */
-int _islower(int c)
+int _isalpha(int c)
 {
-    if (c >= 'a' && c <= 'z')
-    {
-	    return (1);
-    }
-    else
-    {
-	    return (0);
-    }
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		{
+			return (1);
+		}
+		else
+		{
+		return (0);
+		}
 }
