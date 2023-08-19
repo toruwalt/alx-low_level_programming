@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *main: Run the FizzBuzz Program
+ *main -  Run the FizzBuzz Program
  *
  *Return: 0 always
  */
@@ -27,18 +27,19 @@ int main(void)
 		else if (i % 5 == 0)
 		{
 			if (i % 3 == 0)
-                        {
-                                printf("FizzBuzz ");
-                        }
-                        else
-                        {
-                                printf("Buzz ");
-                        }
+			{
+				printf("FizzBuzz ");
+			}
+			else
+			{
+				printf("Buzz ");
+			}
 		}
 		else
 		{
 			printf("%i ", i);
 		}
 	}
+	printf("\n");
 	return (0);
 }
