@@ -3,7 +3,8 @@
 #include <time.h>
 
 /**
- * main - This is the entry point
+ * positive_or_negative - This is the entry point
+ * @n: - the variable entered
  * if - the conditional statement
  * else if - the second conitional statement
  * else - the last conditional statement
