@@ -8,6 +8,7 @@
 void print_rev(char *s)
 {
 	int i, k, j;
+
 	i = 0;
 
 	while (s[i] != '\0')
