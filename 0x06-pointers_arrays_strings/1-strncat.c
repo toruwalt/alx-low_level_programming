@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strcat - Combines 2 arrays
+ * _strncat - Combines 2 arrays
  * @dest: WHere array is copied to
  * @src: where array is copied from
  * @n: number of byte from src
