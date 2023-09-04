@@ -24,7 +24,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		lengthA++;
@@ -46,8 +45,8 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	for (j = 0; s2[j] != '\0'; j++)
-        {
-                d[lengthA + j] = s2[j];
-        }
+	{
+		d[lengthA + j] = s2[j];
+	}
 	return (d);
 }
