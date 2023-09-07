@@ -9,7 +9,6 @@
  * Return: 1 if true, 0 if otherwise
  */
 
-int _atoi(char *s)
+char *_strncpy(char *dest, char *src, int n)
 {
-	return (0);
 }
