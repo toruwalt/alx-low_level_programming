@@ -1,7 +1,18 @@
-#include <stdio.h>
+#ifndef DOG_H
+#define DOG_H
 
-typedef struct dog{
+/**
+ * struct dog - A structure
+ * @name: NAMe
+ * @age: AG
+ * @owner: Owner
+ */
+typedef struct dog
+{
 	char *name;
 	float age;
 	char  *owner;
-}dog, dog_t;
+} dog, dog_t;
+
+
+#endif
