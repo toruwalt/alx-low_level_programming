@@ -3,7 +3,7 @@
 
 /**
  *  init_dog -- a function that initialize a variable of type struct dog
- *  @dog:  Location
+ *  @d: Location
  *  @name: Name
  *  @age: age
  *  @owner: Owner
@@ -12,10 +12,7 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d != NULL)
-	{
-			dog romeo;
-	romeo.name = name;
-	romeo.age = age;
-	romeo.owner = owner;
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
