@@ -1,13 +1,11 @@
 #include "variadic_functions.h"
 #include <stdlib.h>
-
 /**
  * print_numbers - Write a function that returns the sum of all its parameters.
  * @separator: A comma that separates input
  * @n: The number of arguments passed
  * Return: The total addition is returned
  */
-
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
@@ -29,7 +27,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("%d", x);
+			printf("%d ", x);
 			printf("%c", *separator);
 		}
 	}
