@@ -1,17 +1,17 @@
 #include  <stdio.h>
 
 /**
- * div - Divides 2 numbers together
+ * mod - returns the modulus of 2 numbers
  * @a: The first number
  * @b: The second number
  * Return: The computative answer
  */
 
-int div(int a, int b)
+int mod(int a, int b)
 {
 	if (b != 0)
 	{
-		return (a / b);
+		return (a % b);
 	}
 	else
 	{
