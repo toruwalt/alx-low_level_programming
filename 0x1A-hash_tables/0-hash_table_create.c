@@ -11,18 +11,19 @@ hash_table_t *hash_table_create(unsigned long int size)
 	unsigned long int i;
 	hash_table_t *hashTable = malloc(sizeof(hash_table_t));
 
-	if (hashTable == NULL)                            {
-		return NULL;
+	if (hashTable == NULL)
+	{
+		return (NULL);
 	}
 	hashTable->size = size;
 	hashTable->array = calloc(size, sizeof(hash_table_t));
 	if (hashTable->array == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
-	for(i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		hashTable->array[i] = NULL;
 	}
-	return hashTable;
+	return (hashTable);
 }
