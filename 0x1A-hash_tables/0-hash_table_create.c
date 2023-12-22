@@ -12,5 +12,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	hashTable->size = size;
 	hashTable->array = calloc(size, sizeof(hash_table_t));
+	if (hashTable == NULL)
+	{
+		free(hashTable);
+		return NULL;
+	}
 	return hashTable;
 }
