@@ -23,7 +23,12 @@ int binary_search(int *array, size_t size, int value)
 	int mid_value;
 	size_t mid, i;
 	size_t low = 0;
-	size_t high = size - 1;
+	size_t high = size;
+
+	if (array == NULL)
+        {
+                return (-1);
+        }
 
 	while (low <= high)
 	{
