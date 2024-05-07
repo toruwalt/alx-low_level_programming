@@ -4,7 +4,7 @@
 
 /**
  * binary_search - A function that searches for a value in a sorted
- * array of integers using binary search algorithm.
+ * array of integers using BINARY search algorithm.
  * @array: pointer to the first element of the array
  * @size: number of elements in array
  * @value: value to search for
@@ -18,7 +18,7 @@ int binary_search(int *array, size_t size, int value)
 	size_t low = 0;
 	size_t high = size;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 	{
 		return (-1);
 	}
