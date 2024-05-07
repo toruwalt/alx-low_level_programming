@@ -10,6 +10,7 @@
  * @value: value to search for
  * Return: The index where value is found
  */
+
 int binary_search(int *array, size_t size, int value)
 {
 	int mid_value;
@@ -30,14 +31,14 @@ int binary_search(int *array, size_t size, int value)
 			printf("%d ", array[i]);
 		}
 		printf("\n");
-		mid = low + (high - low) / 2;
+		mid = (high + low) / 2;
 		mid_value = array[mid];
-		if (value == mid_value)
-			return (mid_value);
-		else if (value < mid_value)
+		if (value < mid_value)
 			high = mid - 1;
-		else
+		else if (value > mid_value)
 			low = mid + 1;
+		else
+			return (mid_value);
 	}
 	return (-1);
 }
