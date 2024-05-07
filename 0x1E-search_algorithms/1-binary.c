@@ -3,16 +3,8 @@
 #include "search_algos.h"
 
 /**
- * void printArray(int arr[], size_t size) {
- * for (size_t i = 0; i < size; i++) {
-    printf("%d ", arr[i]);
-  }
-  printf("\n");
-}
-*/
-
-/**
- * binary_search - A function that searches for a value in a sorted array of integers using binary search algorithm.
+ * binary_search - A function that searches for a value in a sorted
+ * array of integers using binary search algorithm.
  * @array: pointer to the first element of the array
  * @size: number of elements in array
  * @value: value to search for
@@ -26,9 +18,9 @@ int binary_search(int *array, size_t size, int value)
 	size_t high = size;
 
 	if (array == NULL)
-        {
-                return (-1);
-        }
+	{
+		return (-1);
+	}
 
 	while (low <= high)
 	{
@@ -36,15 +28,16 @@ int binary_search(int *array, size_t size, int value)
 		for (i = low; i < high; i++)
 		{
 			printf("%d ", array[i]);
-		}                                                               printf("\n");
-		
-		
+		}
+		printf("\n");
 		mid = low + (high - low) / 2;
 		mid_value = array[mid];
-
-		if (value == mid_value) return mid_value;
-		else if (value < mid_value) high = mid - 1;
-		else low = mid + 1;
+		if (value == mid_value)
+			return (mid_value);
+		else if (value < mid_value)
+			high = mid - 1;
+		else
+			low = mid + 1;
 	}
 	return (-1);
 }
